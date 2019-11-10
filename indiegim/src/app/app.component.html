@@ -1,44 +1,322 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-    <ul class="nav nav-pills">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Stores</a>
-          <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-            <a class="dropdown-item" href="#">Category</a>
-            <a class="dropdown-item" href="#">Best Seller</a>
-            <a class="dropdown-item" href="#">Bundling</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Show More Page</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Devlogs</a>
-          <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-            <a class="dropdown-item" href="#">Coming Soon</a>
-          </div>
-      </li>
-      <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-          <div class="dropdown-menu show" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-            <a class="dropdown-item" href="#">About Us</a>
-            <a class="dropdown-item" href="#">Terms & Condition</a>
-          </div>
-      </li>
-      </ul>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+   <body id="page-top">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+   <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0" id="sidebarToggle">
+   <i class="fa fa-bars"></i>
+   </button> &nbsp;&nbsp;
+   <a class="navbar-brand" href="index.html">
+      <img src="assets/logo.jpg" alt="logo" height="50" width ="70">
+    </a>
 
+    <!-- Navbar Content -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+     
+       <div class="collapse navbar-collapse" id="navbarColor01">
+         <ul class="navbar-nav mr-auto">
+         <ul class="nav nav-pills">
+           <li class="nav-item active">
+             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Stores</a>
+               <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                 <a class="dropdown-item" href="#">Category</a>
+                 <a class="dropdown-item" href="#">Best Seller</a>
+                 <a class="dropdown-item" href="#">Bundling</a>
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="#">Show More Page</a>
+               </div>
+             </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Devlogs</a>
+               <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                 <a class="dropdown-item" href="#">Coming Soon</a>
+               </div>
+           </li>
+           <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+               <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                 <a class="dropdown-item" href="#">About Us</a>
+                 <a class="dropdown-item" href="#">Terms & Condition</a>
+               </div>
+           </li>
+           </ul>
+         </ul>
+         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <div class="input-group-append">
+                     <button class="btn btn-light" type="button">
+                     <i class="fa fa-search"></i> 
+                     </button>
+                  </div>
+               </div>
+            </form>
+            <ul class="navbar-nav ml-auto ml-md-0 osahan-right-navbar">
+                  <li class="nav-item mx-1">
+                     <a class="nav-link" href="upload.html">
+                     <i class="fa fa-plus-circle fa-fw"></i>
+                     Upload Video
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown no-arrow mx-1">
+                     <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-bell fa-fw"></i>
+                     <span class="badge badge-danger">9+</span>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown no-arrow mx-1">
+                     <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-envelope fa-fw"></i>
+                     <span class="badge badge-success">7</span>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-edit "></i> &nbsp; Action</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-headphones-alt "></i> &nbsp; Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star "></i> &nbsp; Something else here</a>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
+                        <a class="nav-link dropdown-toggle user-dropdown-link" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img alt="Avatar" src="assets/mawang.jpg" height="50" width ="70" border-radius="50px">
+                              Mawang 
+                              </a>
+                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="account.html"><i class="fas fa-fw fa-user-circle"></i> &nbsp; My Account</a>
+                        <a class="dropdown-item" href="subscriptions.html"><i class="fas fa-fw fa-video"></i> &nbsp; Subscriptions</a>
+                        <a class="dropdown-item" href="settings.html"><i class="fas fa-fw fa-cog"></i> &nbsp; Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-fw fa-sign-out-alt"></i> &nbsp; Logout</a>
+                     </div>
+                  </li>
+               </ul>
+         </div>
+     </nav>
+     
+
+<!-- Main Content-->
+<div class="container-fluid pb-0">
+    <div class="top-mobile-search">
+       <div class="row">
+          <div class="col-md-12">   
+             <form class="mobile-search">
+                <div class="input-group">
+                    <div class="input-group-append">
+                      <button type="button" class="btn btn-dark"><i class="fa-search"></i></button>
+                    </div>
+                </div>
+             </form>   
+          </div>
+       </div>
+    </div>
+<div class="video-block section-padding">
+    <div class="row">
+       <div class="col-md-12">
+          <div class="main-title">
+             <div class="btn-group float-right right-action">
+                <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                   <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                   <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                   <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                </div>
+             </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-danger">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-danger">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Unverified"><i class="fas fa-frown text-danger"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-sm-6 mb-3">
+                        <div class="video-card">
+                           <div class="video-card-image">
+                              <a class="play-icon" href="#"><i class="fas fa-play-circle"></i></a>
+                              <a href="#"><img class="img-fluid" src="assets/img_kh.jpg" alt=""></a>
+                              <div class="time">3:50</div>
+                           </div>
+                           <div class="video-card-body">
+                              <div class="video-title">
+                                 <a href="#">There are many variations of passages of Lorem</a>
+                              </div>
+                              <div class="video-page text-success">
+                                 Education  <a title="" data-placement="top" data-toggle="tooltip" href="#" data-original-title="Verified"><i class="fas fa-check-circle text-success"></i></a>
+                              </div>
+                              <div class="video-view">
+                                 1.8M views &nbsp;<i class="fas fa-calendar-alt"></i> 11 Months ago
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <hr class="mt-0">
+               <div class="video-block section-padding">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="main-title">
+                           <div class="btn-group float-right right-action">
+                              <a href="#" class="right-action-link text-gray" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sort by <i class="fa fa-caret-down" aria-hidden="true"></i>
+                              </a>
+                              <div class="dropdown-menu dropdown-menu-right">
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-star"></i> &nbsp; Top Rated</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-signal"></i> &nbsp; Viewed</a>
+                                 <a class="dropdown-item" href="#"><i class="fas fa-fw fa-times-circle"></i> &nbsp; Close</a>
+                           </div>
+                     </div>
+                     <script src="vendor/jquery/jquery.min.js"></script>
+                     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                     <!-- Core plugin JavaScript-->
+                     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                     <!-- Owl Carousel -->
+                     <script src="vendor/owl-carousel/owl.carousel.js"></script>
+                     <!-- Custom scripts for all pages-->
+                     <script src="js/custom.js"></script>
